@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type= "text/css" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <header>
+        
+    <h1>Sistema de gerenciamento de materiais no estoque</h1>
+    <p> <a href= "http://localhost:8081/formulario"> cadastrar materiais </a></p>
+    <p> <a href= "http://localhost:8081/listar"> Relatorio de Estoque </a></p>
+    <title>Cadastro de Materiais </title>
+       
+</header>
+
+</head >
+<body >
+    <center>
+            <h1>Formulario de Cadastro de Materiais</h1>
+    <form action="/adicionar" method ="post">
+       
+        <label for="descricao">descrição:   </label>
+        <input type="text" id="descricao" name ="descricao" required> <br>
+
+        
+        <label for="quantidade">Quantidade:   </label>
+        <input type="text" id="quantidade" name ="quantidade" required><br>
+
+        <label for="valor">Valor:</label>
+        <input type="text" id="valor" name ="valor" required> <br>
+
+        <label for="peso">Peso:</label>
+        <input type="text" id="peso" name ="peso" required> <br>
+
+        <label for="medida">Medida:</label>
+        <input type="text" id="medida" name ="medida" required> <br>
+
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name ="endereco" required> <br>
+
+        <input type ="submit" value = "cadastrar">
+    </form>
+    </center>
+</body>
+</html>
